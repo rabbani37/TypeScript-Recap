@@ -19,8 +19,14 @@ const isElligableList: Generic<boolean> = [true, false, false, true]
 const sqrFunc = (value: number) => {
     return value * value;
 }
-console.log(sqrFunc(4));
+// console.log(sqrFunc(4));
 
+
+type towArray<X, Y> = [X, Y];
+
+const numberArray: towArray<number, number> = [23, 34]
+const stringArray: towArray<string, string> = ['23', '34'];
+const mixedArray: towArray<number, string> = [23, '34']
 
 
 
